@@ -1,0 +1,33 @@
+@mixin horizontalGradient {
+    background: linear-gradient(to right, $gradient1 0%, $gradient2 100%);
+}
+
+@mixin horizontalGradientDarker {
+    background: linear-gradient(to right, $gradient1 0%, $gradient3 100%);
+}
+
+@mixin verticalGradientDark {
+    background: linear-gradient(to bottom, $gradient1 0%, $gradient2 100%);
+}
+
+@mixin verticalGradientDark {
+    background: linear-gradient(to bottom, $gradient4 0%, $gradient5 100%);
+}
+
+@mixin borderGradient {
+    border: 0;
+    border-left: 5px solid;
+    border-image: 1 linear-gradient(to bottom, $gradient1, $gradient2);
+}
+
+@mixin noUserSelect {
+    user-select: none;
+}
+
+@mixin transition {
+    transition: all 0.2s ease;
+}
+
+@mixin noTransition {
+    transition: none;
+}

@@ -1,0 +1,50 @@
+/* Colors */
+$backgroundColor:                   #F8FAFF;
+$backgroundColorDark:               #32415E;
+$backgroundColorSlim:               #F1F5FF;
+
+$whiteColor:                        #fff;
+$whiteColorTransparent:             rgba(255,255,255,0.05);
+$whiteColorTransparentPlus:         rgba(255,255,255,0.1);
+
+$fontColorBase:                     #445576;
+$fontColorBlue:                     #22AAE2;
+
+$borderColorBase:                   #E2E9F9;
+$borderColorDark:                   #7D9BC3;
+
+$alertColor:                        #FFA337;
+$aprovalColor:                      #01B272;
+$dangerColor:                       #EA3D3D;
+$yellowColor:                       #F2C94C;
+$greyColor:                         #8F8888;
+$lightGreenColor:                   #6FCF97;
+
+/* Gradients */
+$gradient1:                         #82e0db;
+$gradient2:                         #22aae2;
+$gradient3:                         #1d90c0;
+$gradient4:                         #2B2D3B;
+$gradient5:                         #32415E;
+
+/* Borders and Paddings */
+$borderRadiusBase:                      10px;
+$borderRadiusTags:                      50px;
+$borderRadiusSmall:                     6px;
+$borderRadiusBullet:                    50%;
+
+$marginSizeBox:                         0.5%;
+
+$paddingBase:                           10px 30px;
+$paddingBts:                            25px;
+
+/* Shadows */
+$mainShadow:                            0px 10px 40px  rgba(98,161,251,0.20);
+$hoverShadow:                           0px 10px 25px  rgba(98,161,251,0.33);
+$tagsShadow:                            0px 5px 10px  rgba(98,161,251,0.24);
+$tagsShadowDark:                        0px 5px 10px  rgba(98,161,251,0.54); 
+$dropShadowScreen:                      0px 40px 90px  rgba(98,161,251,0.35);
+
+/* Sizes */
+$sidebarWidth:                          315px;
+$sidebarWidthCollapsed:                 100px;

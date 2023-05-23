@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  nodejs:
+    container_name: catchup-node
+    build:
+      context: ./node
+      args:
+        SERVE: '${SERVE:-serve}'
+    environment:
+      SERVE: '${SERVE}'
+    volumes:
+      - '..:/app'
+  nginx:
+    container_name: catchup-nginx
+    build:
+      context: ./nginx
+      args:
+        CERT_COMPANY: '${CERT_COMPANY:-Jagaad}'
+        CERT_DOMAIN: '${CERT_DOMAIN:-app.catchup.email}'
+    volumes:
+      - '..:/app'
+      - './nginx/nginx.conf:/etc/nginx/nginx.conf'
+      - './nginx/sites/:/etc/nginx/sites-available'
+      - './logs:/var/log'
+    depends_on:
+      - nodejs
+    ports:
+      - ${HTTP_PUBLIC_PORT-80}:80
+      - ${HTTPS_PUBLIC_PORT-443}:443
